@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="Glossary%20-%20Ink%20Interface%20Kit_files/linkid.js" async="" type="text/javascript"></script><script src="Glossary%20-%20Ink%20Interface%20Kit_files/analytics.js" async=""></script><script src="Glossary%20-%20Ink%20Interface%20Kit_files/all.js" id="facebook-jssdk"></script><script src="Glossary%20-%20Ink%20Interface%20Kit_files/widgets.js" id="twitter-wjs"></script><script type="text/javascript" src="Glossary%20-%20Ink%20Interface%20Kit_files/modernizr.js"></script>
+    <script type="text/javascript">
+        Modernizr.load({
+          test: Modernizr.flexbox,
+          nope : 'http://fastly.ink.sapo.pt/3.1.1/css/ink-legacy.min.css'
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="Glossary%20-%20Ink%20Interface%20Kit_files/ink-flex.css">
+    <link rel="stylesheet" type="text/css" href="Glossary%20-%20Ink%20Interface%20Kit_files/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="Glossary%20-%20Ink%20Interface%20Kit_files/docs.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    
+    <title>Glossary - Ink Interface Kit</title>
+    
+    <meta name="description" content="Know all about Ink's hidden treasures.">
+    <meta name="author" content="SAPO WEB &amp; MEDIA DESIGN">
+
+    <meta name="google-site-verification" content="K-nloq8xn7KxLTZ6KCFUkgKECMQFIm7qA1uOWoQOEc0">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@inksapo">
+    <meta name="twitter:title" content="Ink">
+    <meta name="twitter:description" content="Create responsive web interfaces quick and efficiently.">
+    <meta name="twitter:creator" content="@inksapo">
+    <meta name="twitter:image:src" content="http://imgs.sapo.pt/ink/assets/imgs/ink_opengraph.png">
+    <meta name="twitter:domain" content="http://ink.sapo.pt/">
+
+    <meta property="og:title" content="Ink - Interface Kit">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://ink.sapo.pt/">
+    <meta property="og:image" content="http://imgs.sapo.pt/ink/assets/imgs/ink_opengraph.png">
+    <meta property="og:site_name" content="Ink">
+    <meta property="og:description" content="Ink is a set of tools for quick development of web interfaces.  It offers a fluid and responsive grid, common interface elements, interactive components, a design-first approach with ease of use and simplicity at its core. Start integrating Ink in your projects and remove the hassle of building the basics, staying free to focus on what's important. ">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="shortcut icon" href="http://ink.sapo.pt/assets/img/ink-favicon.ico">
+    <link rel="apple-touch-icon" href="http://ink.sapo.pt/assets/img/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://ink.sapo.pt/assets/img/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://ink.sapo.pt/assets/img/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://ink.sapo.pt/assets/img/touch-icon-ipad-retina.png">
+    <link rel="apple-touch-startup-image" href="http://ink.sapo.pt/assets/img/splash.320x460.png" media="screen and (min-device-width: 200px) and (max-device-width: 320px) and (orientation:portrait)">
+    <link rel="apple-touch-startup-image" href="http://ink.sapo.pt/assets/img/splash.768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+    <link rel="apple-tousplash.1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+
+    <!-- Load Documentation site CSS -->
+
+    <!--[if lt IE 9 ]>
+        <link rel="stylesheet" href="http://fastly.ink.sapo.pt/3.1.1/css/ink-ie.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <![endif]-->
+
+    <script type="text/javascript" src="Glossary%20-%20Ink%20Interface%20Kit_files/ink-all.js"></script>
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body data-twttr-rendered="true" class="ink-drawer">
+
+
+<div id="topbar">
+    <nav class="ink-navigation ink-grid ie7">
+        <ul class="menu horizontal black push-left medium-push-center small-push-center tiny-push-center">
+            <li class="hide-all show-tiny show-small show-medium"><button class="fa fa-bars left-drawer-trigger"></button></li>
+            <li class="logoPlaceholder"><a href="http://ink.sapo.pt/" class="logoPlaceholder">Ink</a></li>
+        </ul>
+        <ul class="menu horizontal black push-right hide-small hide-tiny hide-medium">
+            <li>
+                <a class="ink-button blue" href="https://github.com/sapo/Ink/releases/download/3.1.1/ink-3.1.1.zip" onclick="ga('send', 'event', 'link', 'click', 'Download');" data-trackerlink="content|menutop|downloadzip">Download</a>
+            </li>
+            
+            
+            <li>
+                <a href="http://ink.sapo.pt/ui-elements/" title="UI Elements">UI Elements</a>
+            </li>
+            
+            
+            <li>
+                <a href="http://ink.sapo.pt/javascript/" title="Javascript">Javascript</a>
+            </li>
+            
+            
+            <li>
+                <a href="http://ink.sapo.pt/cookbook/" title="Cookbook">Cookbook</a>
+            </li>
+            
+            
+            <li class="active">
+                <a href="http://ink.sapo.pt/glossary/" title="Glossary">Glossary</a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+<div class="left-drawer">
+    <ul>
+        <li class="search">
+            <form action="http://ink.sapo.pt/search/" method="GET" class="docsearch" role="search">
+    <input placeholder="Search..." class="search-field" name="search" type="search"><span class="fa fa-search"></span>
+</form>
+
+        </li>
+
+        
+        
+        
+        <li>
+            <a href="http://ink.sapo.pt/ui-elements/" title="UI Elements">UI Elements</a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="http://ink.sapo.pt/javascript/" title="Javascript">Javascript</a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="http://ink.sapo.pt/cookbook/" title="Cookbook">Cookbook</a>
+        </li>
+        
+        
+        
+        <li class="active">
+            <a href="http://ink.sapo.pt/glossary/" title="Glossary">Glossary</a>
+        </li>
+        
+
+        
+
+
+  
+
+
+        
+
+        <li><a class="ink-button blue" href="https://github.com/sapo/Ink/releases/download/3.1.1/ink-3.1.1.zip" data-trackerlink="content|menudrawer|downloadzip">Download</a></li>
+
+    </ul>
+</div>
+
+<div id="page-content" class="ink-grid content-drawer">
+    <div class="page-header">
+        <p class="slab-300 section-title">GLOSSARY</p>
+        <h1 class="slab">Glossary</h1>
+        <p>Know all about Ink's hidden treasures.</p>
+        <div class="border"></div>
+    </div>
+    <div class="column-group gutters">
+        <div class="xlarge-100 large-100 medium-100 small-100 tiny-100">
+            <section>
+
+      <table class="props css">
+        <caption>ALERTS</caption>
+        <thead>
+          <tr>
+            <th>Class name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>ink-alert</code></td>
+                <td>Alerts root class. <span class="label mandatory"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <code>basic</code><br>
+                    <code>block</code>
+                </td>
+                <td>Defines the type of alert. <span class="label mandatory"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <code>info</code><br>
+                    <code>success</code><br>
+                    <code>error</code>
+                </td>
+                <td>Defines alert theme.</td>
+            </tr>
+            <tr>
+                <td><code>ink-dismiss</code></td>
+                <td>Defines a dismissing action button.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="unstyled">
+      <li><span class="label mandatory"></span> This class must be used for the component to work.</li>
+    </ul>
+
+    <table class="props css">
+        <caption>BUTTONS</caption>
+        <thead>
+          <tr>
+            <th>Class name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>ink-button</code></td>
+                <td>Buttons root class. <span class="label mandatory"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <code>blue</code><br>
+                    <code>green</code><br>
+                    <code>orange</code><br>
+                    <code>red</code><br>
+                    <code>black</code>
+                </td>
+                <td>Defines the button theme.</td>
+            </tr>
+            <tr>
+                <td><code>button-group</code></td>
+                <td>Defines a wrapper to build a button group. Used with a <code>&lt;div&gt;</code> element.</td>
+            </tr>
+            <tr>
+                <td><code>button-toolbar</code></td>
+                <td>Defines a wrapper to build a button toolbar. Used with a <code>&lt;div&gt;</code> element.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="unstyled">
+      <li><span class="label mandatory"></span> This class must be used for the component to work.</li>
+    </ul>
+
+      <table class="props css">
+    <caption>FLEXBOX</caption>
+    <thead>
+      <tr>
+        <th>Class name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>ink-flex</code></td>
+          <td>Defines an element as a flex container. <span class="label mandatory"></span><span class="label flexbox"></span> </td>
+        </tr>
+        <tr>
+          <td><code>push-top</code></td>
+          <td>Aligns an element to the top of its flexbox container. <span class="label breakpoint-aware"></span><span class="label flexbox"></span></td>
+        </tr>
+        <tr>
+          <td><code>push-middle</code></td>
+          <td>Aligns an element to vertical center of its flexbox container. <span class="label flexbox"></span><span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>push-bottom</code></td>
+          <td>Aligns an element to vertical bottom of its flexbox container. <span class="label flexbox"></span><span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>push-left</code></td>
+          <td>Aligns an element to the left of its flexbox container. <span class="label flexbox"></span><span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>push-center</code></td>
+          <td>Aligns an element to horizontal center of its flexbox container. <span class="label flexbox"></span><span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>push-right</code></td>
+          <td>Aligns an element to the right its flexbox container. <span class="label flexbox"></span><span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>order-#</code></td>
+          <td>Sets the display order for up to 10 elements. When used you have to set the order for all elements inside the parent container. <span class="label breakpoint-aware"></span><span class="label flexbox"></span></td>
+        </tr>
+        <tr>
+          <td><code>reverse</code></td>
+          <td>Inverts the display order of the flexbox containers children. Defaults to the x axis. <span class="label flexbox"></span></td>
+        </tr>
+        <tr>
+          <td><code>vertical</code></td>
+          <td>Sets the flow inside a flexbox container to the y axis. 
+Items will display vertically. Can be combined with reverse to invert 
+element order. <span class="label flexbox"></span></td>
+        </tr>
+        <tr>
+          <td><code>all-auto</code></td>
+          <td>Sets the elements <code>width</code> to auto for all breakpoints. Horizontal space will be divided evenly between elements as content size allows. <span class="label flexbox"></span></td>
+        </tr>
+        <tr>
+          <td><code>tiny-auto</code></td>
+          <td>Sets the elements <code>width</code> to auto for the 'tiny' breakpoint. Horizontal space will be divided evenly between elements as content size allows. <span class="label flexbox"></span></td>
+        </tr>
+        <tr>
+          <td><code>small-auto</code></td>
+          <td>Sets the elements <code>width</code> to auto for the 'small' breakpoint. Horizontal space will be divided evenly between elements as content size allows. <span class="label flexbox"></span></td>
+        </tr>
+        <tr>
+          <td><code>medium-auto</code></td>
+          <td>Sets the elements <code>width</code> to auto for the 'medium' breakpoint. Horizontal space will be divided evenly between elements as content size allows. <span class="label flexbox"></span></td>
+        </tr>
+        <tr>
+          <td><code>large-auto</code></td>
+          <td>Sets the elements <code>width</code> to auto for the 'large' breakpoint. Horizontal space will be divided evenly between elements as content size allows. <span class="label flexbox"></span></td>
+        </tr>
+        <tr>
+          <td><code>xlarge-auto</code></td>
+          <td>Sets the elements <code>width</code> to auto for the 'extra-large' breakpoint. Horizontal space will be divided evenly between elements as content size allows. <span class="label flexbox"></span></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <ul class="unstyled">
+    <li><span class="label mandatory"></span> This class must be used for the component to work.</li>
+    <li><span class="label breakpoint-aware"></span> This class has breakpoint dependent variants, e.g. <code>large-class-name</code>.</li>
+    <li><span class="label flexbox"></span> This feature is only available with ink-flex.css</li>
+  </ul>
+
+  <table class="props css">
+        <caption>FORMS</caption>
+        <thead>
+            <tr>
+                <th>Class name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>ink-form</code></td>
+                <td>The form root class. <span class="label mandatory"></span></td>
+            </tr>
+            <tr>
+                <td><code>control-group</code></td>
+                <td>Defines the container for a label / form control pair. Used with a <code>&lt;div&gt;</code> element. <span class="label mandatory"></span></td>
+            </tr>
+            <tr>
+                <td><code>control</code></td>
+                <td>
+                    Defines the container for a form control (e.g. text field, checkbox, etc.). Used with a <code>&lt;div&gt;</code> element nested in the .control-group. <span class="label mandatory"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><code>required</code></td>
+                <td>Defines a required field.</td>
+            </tr>
+            <tr>
+                <td><code>validation</code></td>
+                <td>Used if you need to print a message upon form submission.</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>error</code><br>
+                    <code>warning</code>
+                </td>
+                <td>Defines the type of message printed upon form submission.</td>
+            </tr>
+            <tr>
+                <td>
+                    <code>tip</code>
+                </td>
+                <td>Defines the default ink style for a tip. Used with a paragraph in the form.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="unstyled">
+      <li><span class="label mandatory"></span> This class must be used for the component to work.</li>
+    </ul>
+
+    <table class="props css">
+    <caption>GRID</caption>
+    <thead>
+      <tr>
+        <th>Class name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>ink-grid</code></td>
+          <td>The grid root class. <span class="label mandatory"></span></td>
+        </tr>
+        <tr>
+          <td><code>column-group</code></td>
+          <td>Groups layout columns. <span class="label mandatory"></span></td>
+        </tr>
+        <tr>
+          <td><code>gutters</code></td>
+          <td>Add space between layout columns. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>all-x%</code></td>
+          <td>Sets x% element width for all breakpoints.</td>
+        </tr>
+        <tr>
+          <td><code>tiny-x%</code></td>
+          <td>Sets x% element width for the '<a href="http://ink.sapo.pt/ui-elements/grid/#breakpoints">tiny</a>' breakpoint.</td>
+        </tr>
+        <tr>
+          <td><code>small-x%</code></td>
+          <td>Sets x% element width for the '<a href="http://ink.sapo.pt/ui-elements/grid/#breakpoints">small</a>' breakpoint.</td>
+        </tr>
+        <tr>
+          <td><code>medium-x%</code></td>
+          <td>Sets x% element width for the '<a href="http://ink.sapo.pt/ui-elements/grid/#breakpoints">medium</a>' breakpoint.</td>
+        </tr>
+        <tr>
+          <td><code>large-x%</code></td>
+          <td>Sets x% element width for the '<a href="http://ink.sapo.pt/ui-elements/grid/#breakpoints">large</a>' breakpoint.</td>
+        </tr>
+        <tr>
+          <td><code>xlarge-x%</code></td>
+          <td>Sets element x% width for the '<a href="http://ink.sapo.pt/ui-elements/grid/#breakpoints">extra-large</a>' breakpoint.</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <ul class="unstyled">
+    <li><span class="label mandatory"></span> This class must be used for the component to work.</li>
+    <li><span class="label breakpoint-aware"></span> This class has breakpoint dependent variants, e.g. <code>large-class-name</code>.</li>
+    <li><span class="label halves-quarters"></span> This class has half and quarter size variants, e.g. <code>half-class-name</code>.</li>
+  </ul>
+
+    <table class="props css">
+    <caption>HELPERS</caption>
+    <thead>
+      <tr>
+        <th>Class name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>align-left</code></td>
+          <td>Sets text-align css property to 'left'. <span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>align-center</code></td>
+          <td>Sets text-align css property to 'center'. <span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>align-right</code></td>
+          <td>Sets text-align css property to 'right'. <span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>padding</code></td>
+          <td>Adds padding equivalent to 1 gutter width all around the element. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>horizontal-padding</code></td>
+          <td>Adds padding equivalent to 1 gutter width to the left and right of the element. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>vertical-padding</code></td>
+          <td>Adds padding equivalent to 1 gutter width to the top and bottom of the element. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>top-padding</code></td>
+          <td>Adds padding equivalent to 1 gutter width to the top of the element. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>right-padding</code></td>
+          <td>Adds padding equivalent to 1 gutter width to the right of the element. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>bottom-padding</code></td>
+          <td>Adds padding equivalent to 1 gutter width to the bottom of the element. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>left-padding</code></td>
+          <td>Adds padding equivalent to 1 gutter width to the left of the element. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>push-left</code></td>
+          <td>Sets float css property to 'left'. <span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>push-center</code></td>
+          <td>Sets float css property to 'none', and margin to '0 auto'. <span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>push-right</code></td>
+          <td>Sets float css property to 'right'. <span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>top-space</code></td>
+          <td>Sets margin-top to a full gutter space. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>right-space</code></td>
+          <td>Sets margin-right to a full gutter space. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>bottom-space</code></td>
+          <td>Sets margin-bottom to a full gutter space. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>left-space</code></td>
+          <td>Sets margin-left to a full gutter space. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>vertical-space</code></td>
+          <td>Sets margin-top and margin-bottom to a full gutter space. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>horizontal-space</code></td>
+          <td>Sets margin-left and margin-right to a full gutter space. <span class="label breakpoint-aware"></span><span class="label halves-quarters"></span></td>
+        </tr>
+        <tr>
+          <td><code>hide</code></td>
+          <td>Sets display css property to 'none'. <span class="label breakpoint-aware"></span></td>
+        </tr>
+        <tr>
+          <td><code>show</code></td>
+          <td>Sets display css property to its default visible state. <span class="label breakpoint-aware"></span></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <ul class="unstyled">
+    <li><span class="label breakpoint-aware"></span> This class has breakpoint dependent variants, e.g. <code>large-class-name</code>.</li>
+    <li><span class="label halves-quarters"></span> This class has half and quarter size variants, e.g. <code>half-class-name</code>.</li>
+  </ul>
+
+    <table class="props css">
+    <caption>IMAGES &amp; CAPTIONS</caption>
+    <thead>
+      <tr>
+        <th>Class name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>ink-image</code></td>
+          <td>The image root class. <span class="label mandatory"></span></td>
+        </tr>
+        <tr>
+          <td><code>over-top</code></td>
+          <td>Places the caption over the top of the image.</td>
+        </tr>
+        <tr>
+          <td><code>over-bottom</code></td>
+          <td>Places the caption over the bottom of the image.</td>
+        </tr>
+        <tr>
+          <td><code>dark</code></td>
+          <td>Applies a white text on a dark background theme to the caption.</td>
+        </tr>
+        <tr>
+          <td><code>imagequery</code></td>
+          <td>Identifies images that will be handled by the <a href="http://ink.sapo.pt/javascript/Ink.UI.ImageQuery">Ink.UI.ImageQuery</a> component. <span class="label js"></span></td>
+        </tr>
+    </tbody>
+  </table>
+
+<ul class="unstyled">
+  <li><span class="label mandatory"></span> This class must be used for the component to work.</li>
+  <li><span class="label js"></span> Requires JavaScript</li>
+</ul>
+
+  <table class="props css">
+        <caption>Navigation</caption>
+        <thead>
+            <tr>
+                <th>Class name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>ink-navigation</code></td>
+                <td>The navigation root class. <span class="label mandatory"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <code>menu</code><br>
+                    <code>breadcrumbs</code><br>
+                    <code>pagination</code><br>
+                    <code>pills</code>
+                    <code>dropdown</code>
+                </td>
+                <td>Defines the type of navigation. <span class="label mandatory"></span></td>
+            </tr>
+            <tr>
+                <td>
+                    <code>white</code><br>
+                    <code>grey</code><br>
+                    <code>black</code><br>
+                    <code>blue</code><br>
+                    <code>green</code><br>
+                    <code>orange</code><br>
+                    <code>red</code>
+                </td>
+                <td>Defines the navigation theme color.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="unstyled">
+      <li><span class="label mandatory"></span> This class must be used for the component to work.</li>
+    </ul>
+
+      <table class="props css">
+    <caption>TABLES</caption>
+    <thead>
+      <tr>
+        <th>Class name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>ink-table</code></td>
+          <td>The table root class. <span class="label mandatory"></span></td>
+        </tr>
+        <tr>
+          <td><code>alternating</code></td>
+          <td>Sets a darker darker background color on odd number rows.</td>
+        </tr>
+        <tr>
+          <td><code>hover</code></td>
+          <td>Highlights table rows when the mouse pointer hovers a row.</td>
+        </tr>
+        <tr>
+          <td><code>bordered</code></td>
+          <td>Applies borders to all table cells.</td>
+        </tr>
+        <tr>
+          <td>
+            <code>red</code><br>
+            <code>green</code><br>
+            <code>blue</code><br>
+            <code>orange</code><br>
+            <code>grey</code><br>
+            <code>black</code><br>
+            <code>yellow</code>
+          </td>
+          <td>Sets a background color on a table row</td><td>
+        </td></tr>
+    </tbody>
+  </table>
+
+  <ul class="unstyled">
+    <li><span class="label mandatory"></span> This class must be used for the component to work.</li>
+  </ul>
+
+      <table class="props css">
+    <caption>TYPOGRAPHY</caption>
+    <thead>
+      <tr>
+        <th>Class name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <code>fw-100</code><br>
+          <code>fw-300</code><br>
+          <code>fw-400</code><br>
+          <code>fw-500</code><br>
+          <code>fw-700</code><br>
+          <code>fw-900</code>
+        </td>
+        <td>Sets font weight and defines font-family as Roboto.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>condensed-300</code><br>
+          <code>condensed-400</code><br>
+          <code>condensed-700</code>
+        </td>
+        <td>Sets font weight and defines font-family as Roboto Condensed.</td>
+      </tr>
+      <tr>
+        <td>
+          <code>slab-100</code><br>
+          <code>slab-300</code><br>
+          <code>slab-400</code><br>
+          <code>slab-700</code>
+        </td>
+        <td>Sets font weight and defines font-family as Roboto Slab.</td>
+      </tr>
+      <tr>
+        <td><code>sans</code></td>
+        <td>Set font-family to the sans-serif font stack</td>
+      </tr>
+      <tr>
+        <td><code>serif</code></td>
+        <td>Set font-family to the serif font stack</td>
+      </tr>
+      <tr>
+        <td><code>monospace</code></td>
+        <td>Set font-family to the monospaced font stack</td>
+      </tr>
+      <tr>
+        <td><code>condensed</code></td>
+        <td>Set font-family to the condensed font stack</td>
+      </tr>
+      <tr>
+        <td><code>slab</code></td>
+        <td>Set font-family to the slab serif font stack</td>
+      </tr>
+      <tr>
+        <td><code>small</code></td>
+        <td>Sets font-size to 75% of the base font-size</td>
+      </tr>
+      <tr>
+        <td><code>medium</code></td>
+        <td>Sets font-size to 85% of the base font-size</td>
+      </tr>
+      <tr>
+        <td><code>large</code></td>
+        <td>Sets font-size to 120% of the base font-size</td>
+      </tr>
+      <tr>
+        <td><code>extralarge</code></td>
+        <td>Sets font-size to 145% of the base font-size</td>
+      </tr>
+      <tr>
+        <td><code>uppercase</code></td>
+        <td>Transforms character to upper case</td>
+      </tr>
+      <tr>
+        <td><code>lowercase</code></td>
+        <td>Transforms character to upper case</td>
+      </tr>
+    </tbody>
+  </table>
+
+    <ul class="unstyled">
+      <li><span class="label mandatory"></span> This class must be used for the component to work.</li>
+      <li><span class="label breakpoint-aware"></span> This class has breakpoint dependent variants, e.g. <code>large-class-name</code>.</li>
+      <li><span class="label halves-quarters"></span> This class has half and quarter size variants, e.g. <code>half-class-name</code>.</li>
+      <li><span class="label flexbox"></span> This feature is only available with <code>ink-flex.css</code></li>
+      <li><span class="label js"></span> Requires JavaScript</li>
+    </ul>
+
+</section>
+
+        </div>
+    </div>
+</div>
+<footer class="content-drawer">
+
+    <div class="ink-grid half-top-space">
+
+        <ul class="unstyled inline fw-300 align-center">
+            <li><a href="http://ink.sapo.pt/changelog/">Changelog</a></li>
+            <li>Ink's code is licensed under <a class="license" rel="license" href="http://opensource.org/licenses/MIT">MIT</a>, documentation under <a class="license" rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">cc-by-nc</a></li>
+        </ul>
+
+        <div class="credits">
+            <h3 class="slab align-center no-margin">Ink is built with the help of these awesome projects</h3>
+            <ul class="unstyled inline align-center">
+                <li>
+                    <a class="uppercase" href="http://sass-lang.com/">SASS</a><br>
+                    <small>(<a href="http://opensource.org/licenses/MIT">MIT License</a>)</small>
+                </li>
+                <li class="separator"></li>
+                <li>
+                    <a class="uppercase" href="http://compass-style.org/">Compass</a><br>
+                    <small>(<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">cc-by-3.0</a>)</small>
+                </li>
+                <li class="separator"></li>
+                <li>
+                    <a class="uppercase" href="http://necolas.github.io/normalize.css/">normalize.css</a><br>
+                    <small>(<a href="https://github.com/necolas/normalize.css/blob/master/LICENSE.md">normalize license</a>)</small>
+                </li>
+                <li class="separator"></li>
+                <li>
+                    <a class="uppercase" href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a><br>
+                    <small>(<a href="http://creativecommons.org/licenses/by/3.0/">cc-by-3.0</a>)</small>
+                </li>
+                <li class="separator"></li>
+                <li>
+                    <a class="uppercase" href="http://modernizr.com/">Modernizr</a><br>
+                    <small>(<a href="http://opensource.org/licenses/MIT">MIT License</a>)</small>
+                </li>
+                <li class="separator"></li>
+                <li>
+                    <a class="uppercase" href="http://nodejs.org/">Node.js</a><br>
+                    <small>(<a href="http://opensource.org/licenses/MIT">MIT License</a>)</small>
+                </li>
+                <li class="separator"></li>
+                <li>
+                    <a class="uppercase" href="http://gruntjs.com/">Grunt</a><br>
+                    <small>(<a href="http://opensource.org/licenses/MIT">MIT License</a>)</small>
+                </li>
+                <li class="separator"></li>
+                <li>
+                    <a class="uppercase" href="http://bower.io/">Bower</a><br>
+                    <small>(<a href="http://opensource.org/licenses/MIT">MIT License</a>)</small>
+                </li>
+            </ul>
+        </div>
+
+        <div class="align-center socialplugins">
+
+            <div class="column-group tiny-vertical-gutters">
+                <div class="all-10 hide-all show-large show-xlarge"><strong class="slab">Follow Ink</strong></div>
+                <div class="all-30 medium-33 small-33 tiny-100 align-center">
+                    <iframe style="width: 106px; height: 20px;" data-twttr-rendered="true" title="Twitter Tweet Button" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" src="Glossary%20-%20Ink%20Interface%20Kit_files/tweet_button.html" allowtransparency="true" id="twitter-widget-0" frameborder="0" scrolling="no"></iframe>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    <iframe style="width: 116px; height: 20px;" data-twttr-rendered="true" title="Twitter Follow Button" class="twitter-follow-button twitter-follow-button" src="Glossary%20-%20Ink%20Interface%20Kit_files/follow_button.html" allowtransparency="true" id="twitter-widget-1" frameborder="0" scrolling="no"></iframe>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </div>
+                <div fb-iframe-plugin-query="action=like&amp;app_id=1429763897272358&amp;href=https%3A%2F%2Ffacebook.com%2Finksapo%2F&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=false" fb-xfbml-state="rendered" class="fb-like all-30 medium-33 small-33 tiny-100 align-center fb_iframe_widget" data-href="https://facebook.com/inksapo/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"><span style="vertical-align: bottom; width: 123px; height: 20px;"><iframe class="" src="Glossary%20-%20Ink%20Interface%20Kit_files/like.html" style="border: medium none; visibility: visible; width: 123px; height: 20px;" title="fb:like Facebook Social Plugin" allowtransparency="true" name="f1a3c588156c1e2" frameborder="0" height="1000px" scrolling="no" width="1000px"></iframe></span></div>
+                <div class="all-30 medium-33 small-33 tiny-100 align-center">
+                    <iframe src="Glossary%20-%20Ink%20Interface%20Kit_files/github-btn.html" allowtransparency="true" frameborder="0" height="20" scrolling="0" width="110"></iframe>
+                    <iframe src="Glossary%20-%20Ink%20Interface%20Kit_files/github-btn_002.html" allowtransparency="true" frameborder="0" height="20" scrolling="0" width="110"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="column-group horizontal-gutters copyright top-space fw-thin uppercase">
+          <div class="all-30 small-100 tiny-100 align-left small-align-center tiny-align-center">
+            <p><a class="SAPOlogo dark" href="http://www.sapo.pt/">sapo.pt</a></p>
+          </div>
+          <div class="all-70 small-100 tiny-100 align-right small-align-center tiny-align-center">
+            <p class="fastly">
+              CDN service is provided by <a href="http://fastly.com/" target="_blank"><img src="Glossary%20-%20Ink%20Interface%20Kit_files/fastly_red.png" alt="Fastly"></a>
+            </p>
+          </div>
+        </div>
+
+
+
+    </div>
+
+</footer>
+
+    <script>
+    Ink.requireModules(['Ink.UI.Drawer_1'], function(Drawer) {
+      var inkDrawer = new Drawer({ sides: 'left', mode: 'push' });
+    });
+    </script>
+    <script type="text/javascript" src="Glossary%20-%20Ink%20Interface%20Kit_files/search.js"></script>
+    
+        <script type="text/javascript" src="Glossary%20-%20Ink%20Interface%20Kit_files/a"></script>
+        <script>
+          SAPO.WebAnalytics.track({swakt:"FC2C65EF-D60C-4BC2-9D76-251A50DADC3D"});
+          SAPO.WebAnalytics.registerClick();
+        </script>
+        <!--
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          //js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=82073436953";
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=180039342148350";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        -->
+        <div class=" fb_reset" id="fb-root"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe src="Glossary%20-%20Ink%20Interface%20Kit_files/7r8gQb8MIqE.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_http" allowtransparency="true" name="fb_xdm_frame_http" frameborder="0" scrolling="no"></iframe><iframe src="Glossary%20-%20Ink%20Interface%20Kit_files/7r8gQb8MIqE_002.html" style="border: medium none;" tabindex="-1" title="Facebook Cross Domain Communication Frame" aria-hidden="true" id="fb_xdm_frame_https" allowtransparency="true" name="fb_xdm_frame_https" frameborder="0" scrolling="no"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1429763897272358";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-2620870-11', 'auto');
+          ga('require', 'displayfeatures');
+          ga('require', 'linkid', 'linkid.js');
+          ga('send', 'pageview');
+        </script>
+    
+  
+
+</body></html>
