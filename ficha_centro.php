@@ -11,10 +11,10 @@ $con=new conexbd();
 				<div class="ink-gutter">
 					<h4>Datos del centro</h4>
 					<?
-					$rs=$con->consultar("select * from centros where id_centro = '$centro'");
+					$rs=$con->consultar("select * from centros inner join provincias on(centros.Provincia=provincias.id) where id_centro = '$centro'");
 					if (mysql_num_rows($rs)>0){
 						while($rdo=mysql_fetch_array($rs)){
-							echo "Provincia: ".$rdo['Provincia']."<br/>";
+							echo "Provincia: ".$rdo['provincia']."<br/>";
 							echo "Localidad: ".$rdo['Localidad']."<br/>";
 							echo "Tipo de centro: ".$rdo["Tipo"]."<br/>";
 							echo "Nombre: ".$rdo["Nombre"]."<br/>";

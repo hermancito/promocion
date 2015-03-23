@@ -1,0 +1,7 @@
+.bordeCajas{
+	border: 1px solid #C9C9C9;
+	border-radius: 10px;
+	margin-left: 1%;
+	margin-bottom: 5px;
+	height: 230px;
+}

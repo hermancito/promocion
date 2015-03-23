@@ -24,10 +24,14 @@
 
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="./css/ink.css">
+		<link rel="stylesheet" href="./css/mystyles.css">
 		
 		<!--[if IE]>
 			<link rel="stylesheet" href="./css/ink-ie.css" type="text/css" media="screen" title="no title" charset="utf-8">
 		<![endif]-->
+		<script src="js/jquery.js"></script>
+		<script src="js/cargadorRefac.js"></script>
+		<script src="js/scripts.js"></script>
 		
 	</head>
 	<body>
@@ -36,8 +40,8 @@
    
 		<header class="ink-container ink-for-l">
 			<div class="ink-vspace">
+				<img src="imgs/marcombo.png" alt="" align="left">
 				<h1 class="tit">Gestión de la promoción</h1>
-				<p>Gestión de centros, enseñanzas, profesores y muestras</p>
 			</div>
 		</header>
 
